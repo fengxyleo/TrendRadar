@@ -1,0 +1,114 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>频率词统计报告</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 20px; }
+                h1, h2 { color: #333; }
+                table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+                th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+                th { background-color: #f2f2f2; }
+                tr:nth-child(even) { background-color: #f9f9f9; }
+                .word { font-weight: bold; }
+                .count { text-align: center; }
+                .percentage { text-align: center; }
+                .titles { max-width: 500px; }
+                .source { color: #666; font-style: italic; }
+                .error { color: #d9534f; }
+                .news-link { 
+                    color: #007bff; 
+                    text-decoration: none; 
+                    border-bottom: 1px dotted #007bff;
+                }
+                .news-link:hover { 
+                    color: #0056b3; 
+                    text-decoration: underline; 
+                }
+                .news-link:visited { 
+                    color: #6f42c1; 
+                }
+                .no-link { 
+                    color: #333; 
+                }
+                .new-title {
+                    background-color: #fff3cd;
+                    border: 1px solid #ffc107;
+                    border-radius: 3px;
+                    padding: 2px 6px;
+                    margin: 2px 0;
+                }
+                .new-section {
+                    background-color: #d1ecf1;
+                    border: 1px solid #bee5eb;
+                    border-radius: 5px;
+                    padding: 10px;
+                    margin-top: 10px;
+                }
+                .new-section h3 {
+                    color: #0c5460;
+                    margin-top: 0;
+                }
+            </style>
+        </head>
+        <body>
+            <h1>频率词统计报告</h1>
+        <p>总标题数: 255</p><p>生成时间: 2025-09-13 11:24:01</p>
+            <table>
+                <tr>
+                    <th>排名</th>
+                    <th>频率词</th>
+                    <th>出现次数</th>
+                    <th>占比</th>
+                    <th>相关标题</th>
+                </tr>
+        
+                <tr>
+                    <td>1</td>
+                    <td class="word">马斯克 特斯拉</td>
+                    <td class="count">3</td>
+                    <td class="percentage">1.18%</td>
+                    <td class="titles">[华尔街见闻] <a href="https://wallstreetcn.com/articles/3755472" target="_blank" class="news-link">美股涨跌不一，特斯拉两日大涨14%，美债美元齐跌，加密货币普涨</a> <font color='red'><strong>[3]</strong></font> <font color='grey'>- 11时24分</font><br>[华尔街见闻] <a href="https://wallstreetcn.com/articles/3755510" target="_blank" class="news-link">两天涨近14%！特斯拉股价大爆发，发生了什么？</a> <font color='red'><strong>[5]</strong></font> <font color='grey'>- 11时24分</font><br>[财联社热门] <a href="https://www.cls.cn/detail/2144138" target="_blank" class="news-link">特斯拉豪赌机器人寻找新叙事 机构称高估值下马斯克已无犯错空间</a> [12] <font color='grey'>- 11时24分</font></td>
+                </tr>
+            
+                <tr>
+                    <td>2</td>
+                    <td class="word">ai 人工智能</td>
+                    <td class="count">2</td>
+                    <td class="percentage">0.78%</td>
+                    <td class="titles">[百度热搜] <a href="https://www.baidu.com/s?wd=%E2%80%9C%E5%85%B0%E5%B7%9E%E4%BF%AE%E9%A9%AC%E8%B8%8F%E9%A3%9E%E7%87%95%E9%9B%95%E5%A1%91%E2%80%9D%E7%B3%BBAI%E7%94%9F%E6%88%90" target="_blank" class="news-link">“兰州修马踏飞燕雕塑”系AI生成</a> [11] <font color='grey'>- 11时24分</font><br><div class='new-title'>🆕 [weibo] <a href="https://m.weibo.cn/search?containerid=100103type%3D1%26t%3D10%26q%3D%E5%94%90%E5%9B%BD%E5%BC%BA%E7%9A%84%E4%BA%94%E5%AE%98%E8%BE%A8%E8%AF%86%E5%BA%A6%E8%BF%9EAI%E9%83%BD%E5%8A%A8%E4%B8%8D%E4%BA%86&amp;stream_entry_id=31&amp;isnewpage=1&amp;extparam=seat%3D1%26filter_type%3Drealtimehot%26c_type%3D31%26flag%3D1%26realpos%3D18%26lcate%3D5001%26band_rank%3D18%26q%3D%25E5%2594%2590%25E5%259B%25BD%25E5%25BC%25BA%25E7%259A%2584%25E4%25BA%2594%25E5%25AE%2598%25E8%25BE%25A8%25E8%25AF%2586%25E5%25BA%25A6%25E8%25BF%259EAI%25E9%2583%25BD%25E5%258A%25A8%25E4%25B8%258D%25E4%25BA%2586%26cate%3D5001%26stream_entry_id%3D31%26pos%3D17%26dgr%3D0%26display_time%3D1757733810%26pre_seqid%3D17577338106310203120853" target="_blank" class="news-link">唐国强的五官辨识度连AI都动不了</a> [18] <font color='grey'>- 11时24分</font></div></td>
+                </tr>
+            
+                <tr>
+                    <td>3</td>
+                    <td class="word">汽车 自动驾驶 l3</td>
+                    <td class="count">2</td>
+                    <td class="percentage">0.78%</td>
+                    <td class="titles">[zhihu] <a href="https://www.zhihu.com/question/1949881317593408069" target="_blank" class="news-link">小鹏主动召回 47490 辆 P7 + 汽车，免费更换转向机总成，转向助力失效的安全隐患有多大？</a> <font color='red'><strong>[1]</strong></font> <font color='grey'>- 11时24分</font><br>[百度热搜] <a href="https://www.baidu.com/s?wd=%E7%A5%9E%E7%A7%98%E9%87%91%E4%B8%BB%E5%87%BA%E6%89%8B+%E5%A8%81%E9%A9%AC%E6%B1%BD%E8%BD%A6%E2%80%9C%E5%A4%8D%E6%B4%BB%E2%80%9D" target="_blank" class="news-link">神秘金主出手 威马汽车“复活”</a> [9] <font color='grey'>- 11时24分</font></td>
+                </tr>
+            
+                <tr>
+                    <td>4</td>
+                    <td class="word">米哈游 原神</td>
+                    <td class="count">1</td>
+                    <td class="percentage">0.39%</td>
+                    <td class="titles">[zhihu] <a href="https://www.zhihu.com/question/1949929843992016061" target="_blank" class="news-link">如何评价 2025 年 9 月米哈游《崩坏星穹铁道》3.6 版本「丹恒•腾荒」免费领取？</a> [19] <font color='grey'>- 11时24分</font></td>
+                </tr>
+            
+                <tr>
+                    <td>5</td>
+                    <td class="word">芯片 半导体 光刻机</td>
+                    <td class="count">1</td>
+                    <td class="percentage">0.39%</td>
+                    <td class="titles">[华尔街见闻] <a href="https://wallstreetcn.com/articles/3755456" target="_blank" class="news-link">恒科指涨1.7%，阿里创近4年新高、百度大涨8%，创业板跌逾1%，芯片股爆发、寒武纪一度重夺“股王”宝座</a> <font color='red'><strong>[4]</strong></font> <font color='grey'>- 11时24分</font></td>
+                </tr>
+            
+            </table>
+        
+            <div class="new-section">
+                <h3>🆕 本次新增热点新闻 (共 1 条)</h3>
+            <h4>weibo (1 条)</h4><ul><li><a href="https://m.weibo.cn/search?containerid=100103type%3D1%26t%3D10%26q%3D%E5%94%90%E5%9B%BD%E5%BC%BA%E7%9A%84%E4%BA%94%E5%AE%98%E8%BE%A8%E8%AF%86%E5%BA%A6%E8%BF%9EAI%E9%83%BD%E5%8A%A8%E4%B8%8D%E4%BA%86&amp;stream_entry_id=31&amp;isnewpage=1&amp;extparam=seat%3D1%26filter_type%3Drealtimehot%26c_type%3D31%26flag%3D1%26realpos%3D18%26lcate%3D5001%26band_rank%3D18%26q%3D%25E5%2594%2590%25E5%259B%25BD%25E5%25BC%25BA%25E7%259A%2584%25E4%25BA%2594%25E5%25AE%2598%25E8%25BE%25A8%25E8%25AF%2586%25E5%25BA%25A6%25E8%25BF%259EAI%25E9%2583%25BD%25E5%258A%25A8%25E4%25B8%258D%25E4%25BA%2586%26cate%3D5001%26stream_entry_id%3D31%26pos%3D17%26dgr%3D0%26display_time%3D1757733810%26pre_seqid%3D17577338106310203120853" target="_blank" class="news-link">唐国强的五官辨识度连AI都动不了</a> [18]</li></ul></div>
+        </body>
+        </html>
+        
